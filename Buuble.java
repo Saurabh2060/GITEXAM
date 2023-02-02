@@ -10,12 +10,19 @@ class Ads{
     public void insertionsort(){
         System.out.println("Insertionsort code");
     }
+
+
+    public void selectionsort(){
+        System.out.println("Selection sort code");
+    }
+
+
+
     public static void name() {
 
         Scanner sc = new Scanner(System.in);
 
         Ads o = new Ads();
-        o.bubble();
 
         int x;
         System.out.println("Enter 1 for bubble sort ,2 for insertionsort")
@@ -27,6 +34,10 @@ class Ads{
             
             case 2:
             o.insertionsort();
+            break;
+            
+            case 3:
+            o.selectionsort();
             break;
             
             default:
